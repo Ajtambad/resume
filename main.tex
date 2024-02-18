@@ -1,0 +1,115 @@
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{a4paper, margin=0.5in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage{hyperref} % For hyperlinks
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+
+% Begin document
+\begin{document}
+
+% Disable page numbers
+\pagestyle{empty}
+
+% Header
+\begin{center}
+\textbf{\huge Amogh Jagadish Tambad}\\[2pt] % Name
+tambadamogh@gmail.com \hspace{1mm} $|$ \hspace{1mm} (602) 561-8944  \hspace{1mm} $|$ \hspace{1mm} $linkedin.com/in/amogh-jagadish-tambad$ \hspace{1mm}
+\end{center}
+
+% Education Section
+\section*{EDUCATION}
+\noindent
+\textbf{Master of Science}, Computer Science \hfill May 2025 \\ % University name and location
+Arizona State University
+\hfill GPA: 3.78/4\\ % Degree and GPA
+\textbf{Relevant Coursework:} Perceptual Reasoning \& Symbol Grounding, Knowledge Representation and Reasoning, Cloud Computing, Data Visualization, Information Assurance \& Security.\\
+
+\noindent
+\textbf{Bachelor of Technology (B.Tech)}, Computer Science and Engineering \hfill May 2021 \\ % University name and location
+REVA University, Bangalore, India \hfill GPA: 8.93/10\\ % Degree and GPA
+\textbf{Relevant Coursework:} Data Structures and Algorithms, Computer Architecture, Operating Systems.
+
+% Skills Section
+\section*{SKILLS}
+\begin{itemize}
+    \item \textbf{Programming:} Python, C++, Shell Scripting, C, SQL, HTML, Java, JavaScript. % Programming skills
+    \item \textbf{Tools and Technologies:} AWS, Git, Jenkins, Heroku, Splunk, Zabbix, Microsoft Excel, Docker, Oracle, MongoDB. % Software skills
+    \item \textbf{Libraries and Frameworks:} PyTorch, Flask, OpenCV, Pandas, Keras, scikit-learn.
+\end{itemize}
+
+% Experience Section
+\section*{EXPERIENCE}
+\noindent
+\textbf{System Engineer - 1}, Cerner Healthcare
+\hfill May 2021 - Jul 2023 % Position and duration
+\begin{itemize}
+    \item Engaged with the software development team on \textbf{Splunk} upgrades, troubleshooting, and deployments, ensuring up-to-date servers.
+    \item Migrated 80\% data from On-prem to \textbf{AWS}, making access to data more flexible, secure, and inexpensive.
+    \item Integrated \textbf{Jenkins} and \textbf{GitHub} to maintain important documentation and test merge requests for semantic errors.
+    \item Performed \textbf{CI/CD} and 300+ bi-weekly micro-service \textbf{deployments} for web applications to deploy new UI and backend features.
+    \item Managed and tracked over 10 projects and 400+ tasks to completion through \textbf{JIRA}, resulting in smooth and error-free delivery. 
+\end{itemize}
+\noindent
+\textbf{Research Intern}, REVA Research \& Development Cell
+\hfill Jan 2021 - Apr 2021 % Position and duration
+\begin{itemize}
+    \item Trained an ML model to estimate insurance costs based on user details by leveraging \textbf{Linear Regression} and \textbf{Random Forest} techniques.
+    \item Utilized \textbf{Python} and \textbf{Microsoft Excel} to eliminate unnecessary data and fill up around 120 NaN values. 
+    \item Visualized data with graphs and charts made with the \textbf{Matplotlib} library and gained important insights about the impact of lifestyle choices on insurance prices.
+    \item Built a web application using \textbf{Flask} and \textbf{HTML}, and deployed it to \textbf{Heroku}, resulting in more accessibility.
+\end{itemize}
+
+% Projects Section
+\section*{PROJECTS}
+
+\noindent
+\textbf{Live Face Recognition Application with AWS}  \hfill Jan 2024 - Present\\ % Project name and location
+\textit{Arizona State University, Tempe, Arizona} % Project link and duration
+\begin{itemize}
+    \item Hosted the application on a hybrid cloud environment with \textbf{AWS} and \textbf{OpenStack}.
+    \item Handled concurrent requests using \textbf{Lambda} and \textbf{EC2} instances, while \textbf{S3} and \textbf{DynamoDB} act as data stores.
+\end{itemize}
+
+\noindent
+\textbf{Novel Object Detection Using Reasoning by Elimination} \hfill Aug 2023 - Dec 2023\\% Project link and duration
+\textit{Arizona State University, Tempe, Arizona}
+\begin{itemize}
+    \item Engineered a system with \textbf{PyTorch} to detect 'novel' objects not included in training data.
+    \item Leveraged pre-trained \textbf{ResNet-18} and \textbf{BERT Tokenizer} models to extract features. 
+    \item Computed Cosine similarity and trained the agent with \textbf{reinforcement learning} to eliminate seen objects.
+    \item Generated an automobile-relevant, real-world dataset of 1260 images using \textbf{Stable Diffusion}. % Project description and contributions
+\end{itemize}
+
+\noindent
+\textbf{Mask Detection Using CNN and OpenCV} \hfill Apr 2020 - Jun 2020\\ % Project name and duration
+\textit{REVA University, Bangalore, India}  
+\begin{itemize}
+    \item Trained a deep learning model with PyTorch to detect whether a person is wearing a face mask.
+    \item Employed Convolutional Neural Networks (\textbf{CNNs}), specifically ResNet-50 architecture to train the model.
+    \item Tested the model in real-time with \textbf{OpenCV} by feeding frame-by-frame live video footage to the model.
+    \item Obtained a model accuracy of \textbf{92\%} through 10 epochs of training on train and validation data.
+    \item Submitted to the 'Jeeva Samrakshak hackathon' organized by REVA university and won \textbf{2nd place}.  % Project description and contributions
+\end{itemize}
+
+\noindent
+\textbf{Driver Drowsiness Detection System}  \hfill Feb 2020 - Mar 2020\\ % Project name and location
+\textit{REVA University, Bangalore, India} % Project link and duration
+\begin{itemize}
+    \item Built a system capable of detecting driver drowsiness by recording eye and mouth movements.
+    \item  Gauged the eye closure duration by utilizing OpenCV and 'frontal face detector' module to distinguish between drowsiness and blinking. 
+    \item Accounted for yawning through coordinates near the user's mouth, making the system more robust.
+    \item  Integrated an alarm system to alert users of drowsiness, thereby increasing usability. % Project description and contributions
+\end{itemize}
+
+% End document
+\end{document}
